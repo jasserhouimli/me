@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasser Houimli | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dark">
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">JH</span>
+        <span class="brand-text">Jasser Houimli</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#work">Work</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-icon" aria-hidden="true">/</span>
+        <span class="theme-text">Theme</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Backend Engineering • Data Systems • Realtime</p>
+          <h1>
+            Clean systems,
+            <span class="accent">fast feedback</span>,
+            real outcomes.
+          </h1>
+          <p class="lede">
+            I build backend services, data pipelines, and realtime systems
+            with a focus on clean architecture, performance, and clarity.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#work">View projects</a>
+            <a class="btn ghost" href="https://drive.google.com/file/d/1p3SYZemnvN8Shr7x3iO3MBD6HkKOnC3H/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
+            <a class="btn ghost" href="mailto:houimlijasser9@gmail.com">Email me</a>
+          </div>
+          
+        </div>
+        <div class="hero-card">
+          <div class="card-line"></div>
+          <p class="card-title">Currently</p>
+          <p class="card-body">Building backend and data systems in .NET and Python.</p>
+          <div class="card-meta">
+            <span>Manouba, Tunisia</span>
+            <span>Open to internships</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-head">
+          <h2>Selected Work</h2>
+          <p>Projects that show my backend, data, and realtime focus.</p>
+        </div>
+        <div class="work-grid">
+          <a class="work-card" href="https://github.com/jasserhouimli/TapTapRace" target="_blank" rel="noreferrer">
+            <h3>TapTapRace</h3>
+            <p>Realtime typing race game with SignalR rooms with UI</p>
+            <div class="tags">
+              <span>ASP.NET Core</span>
+              <span>SignalR</span>
+              <span>Docker</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/jasserhouimli/modeforcesAPI" target="_blank" rel="noreferrer">
+            <h3>ModeforcesAPI</h3>
+            <p>Codeforces-style backend with JWT auth and PostgreSQL.</p>
+            <div class="tags">
+              <span>ASP.NET Core</span>
+              <span>Docker</span>
+              <span>PostgreSQL</span>
+              
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/jasserhouimli/bigdata" target="_blank" rel="noreferrer">
+            <h3>Salary Analytics</h3>
+            <p>Hadoop + Spark pipeline with a Streamlit dashboard.</p>
+            <div class="tags">
+              <span>PySpark</span>
+              <span>Hadoop</span>
+              <span>Streamlit</span>
+              <span>Docker</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/jasserhouimli/ailearning" target="_blank" rel="noreferrer">
+            <h3>AI Learning</h3>
+            <p>ML classification and clustering on the Carseats dataset.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Matplotlib</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/jasserhouimli/RJA3" target="_blank" rel="noreferrer">
+            <h3>RJA3</h3>
+            <p>Lost-and-found backend API with authentication and matching.</p>
+            <div class="tags">
+              <span>ASP.NET Core</span>
+              
+              <span>Swagger</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>xUnit</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="capabilities" id="capabilities">
+        <div class="section-head">
+          <h2>Capabilities</h2>
+          <p>How I help teams ship reliable, scalable systems.</p>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-card">
+            <h3>API Architecture</h3>
+            <p>Design clean, versioned APIs with authentication, validation, and docs.</p>
+            <ul>
+              <li>REST + realtime endpoints</li>
+              <li>JWT auth and role-based access</li>
+              <li>Swagger and contract testing</li>
+            </ul>
+          </article>
+          <article class="cap-card">
+            <h3>Data Pipelines</h3>
+            <p>Move and shape data at scale for analytics and product teams.</p>
+            <ul>
+              <li>ETL with Spark and Hadoop</li>
+              <li>Stream + batch workflows</li>
+              <li>Dashboards for quick insight</li>
+            </ul>
+          </article>
+          <article class="cap-card">
+            <h3>Quality and Delivery</h3>
+            <p>Ship with confidence using testing, automation, and clean CI.</p>
+            <ul>
+              <li>Unit + integration test suites</li>
+              <li>Containerized environments</li>
+              <li>Monitoring-ready deployments</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Focused on systems that scale and stay readable.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a third-year computer engineering student focused on backend systems
+              and data pipelines. I enjoy turning complex problems into simple,
+              reliable software.
+            </p>
+            <p>
+              My stack centers on .NET, Python, and modern web tooling, with a
+              performance-first mindset and clean API design.
+            </p>
+          </div>
+          <div class="about-list">
+            <h4>Focus</h4>
+            <ul>
+              <li>Backend API design</li>
+              <li>Data processing and analytics</li>
+              <li>Realtime communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Let us build something clean and fast.</p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:houimlijasser9@gmail.com">houimlijasser9@gmail.com</a>
+          <p class="contact-note">Open to backend and data internships for 2026.</p>
+          <div class="contact-links">
+            <a href="https://drive.google.com/file/d/1p3SYZemnvN8Shr7x3iO3MBD6HkKOnC3H/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+            <a href="https://www.linkedin.com/in/jasserho1/">LinkedIn</a>
+            <a href="https://github.com/jasserhouimli">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Jasser Houimli</span>
+      <span>2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
