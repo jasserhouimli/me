@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Jasser Houimli} \\ \vspace{1pt}
+    \small +21623628074 $|$ \href{mailto:houimlijasser9@gmail.com}{\underline{houimlijasser9@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/jasserho1/}{\underline{linkedin.com/in/jasserho1}} $|$
+    \href{https://jasserhouimli.github.io/me/}{\underline{jasserhouimli.github.io/me}} $|$
+    \href{https://github.com/jasserhouimli}{\underline{github.com/jasserhouimli}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Institut Sup{\'e}rieur des Arts Multim{\'e}dia de la Manouba (ISAMM)}{Manouba, Tunisia}
+      {Licence in Computer Engineering}{2024 -- 2027}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{AI Learning -- ML Classification \& Clustering on Carseats} $|$ \href{https://github.com/jasserhouimli/ailearning}{\underline{github.com/jasserhouimli/ailearning}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a complete ML pipeline in Python using the Carseats dataset to predict high and low sales.}
+            \resumeItem{Implemented and compared KNN, K-Means clustering, Random Forest (with hyperparameter tuning), and SVM with an RBF kernel.}
+            \resumeItem{Analyzed feature importance with Random Forest and visualized clusters and model performance with Matplotlib.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Salary Analytics Dashboard} $|$ \href{https://github.com/jasserhouimli/bigdata}{\underline{github.com/jasserhouimli/bigdata}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a 12-container Hadoop and Spark cluster using Docker Compose for distributed data processing.}
+            \resumeItem{Developed a Streamlit dashboard with interactive Plotly charts to visualize salary trends.}
+            \resumeItem{Implemented PySpark ETL and a MapReduce job for transaction analysis.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{ModeforcesAPI -- Codeforces-like Backend} $|$ \href{https://github.com/jasserhouimli/modeforcesAPI}{\underline{github.com/jasserhouimli/modeforcesAPI}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a backend API in C\# with problem management, submission handling, and user authentication.}
+            \resumeItem{Used ASP.NET Core, Entity Framework Core, PostgreSQL, and JWT-based security.}
+            \resumeItem{Containerized with Docker and made deployable via Zerops.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{RJA3: Lost \& Found Backend API} $|$ \href{https://github.com/jasserhouimli/RJA3}{\underline{github.com/jasserhouimli/RJA3}}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and built a RESTful API for a lost-and-found platform with user authentication, item reporting, and matching logic.}
+            \resumeItem{Implemented CRUD operations, search and filtering, and role-based authorization.}
+            \resumeItem{Documented the API with Swagger and wrote unit tests with xUnit.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TapTapRace} $|$ \href{https://github.com/jasserhouimli/TapTapRace}{\underline{github.com/jasserhouimli/TapTapRace}}}{}
+          \resumeItemListStart
+            \resumeItem{Built a real-time typing race game with room-based gameplay and live messaging.}
+            \resumeItem{Implemented an ASP.NET Core SignalR hub for join/leave and real-time updates.}
+            \resumeItem{Exposed REST endpoints to create and list rooms, then wired a React + TypeScript UI to consume them.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Competitive Programming Solutions Repository} $|$ \emph{C++, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Maintained a GitHub repository with solutions to 150+ competitive programming problems.}
+            \resumeItem{Covered topics include dynamic programming, graphs, number theory, strings, and data structures.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Competitive Programming}{Ongoing}
+      {Independent}{Online}
+      \resumeItemListStart
+        \resumeItem{Codeforces \textbf{Pupil}; profile: \href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}.}
+        \resumeItem{Solved 200+ problems across Codeforces, AtCoder, and LeetCode.}
+        \resumeItem{Competed in university-level ICPC local contests.}
+        \resumeItem{Strong foundations in algorithms: sorting, binary search, graphs, dynamic programming, and greedy techniques.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, C\#, Java, SQL} \\
+     \textbf{Backend}{: ASP.NET Core, Entity Framework Core, REST API design} \\
+     \textbf{Big Data}{: Hadoop (HDFS, MapReduce), Apache Spark (PySpark), Docker} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, SQL Server} \\
+     \textbf{Tools}{: Git, Linux command line, Jupyter Notebook, VS Code, Postman} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Plotly}
+    }}
+ \end{itemize}
+
+
+
+
+
+%-------------------------------------------
+\end{document}
