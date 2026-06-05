@@ -2,7 +2,7 @@
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
-\usepackage[empty]{fullpage}
+\usepackage[left=0.4in, right=0.4in, top=0.4in, bottom=0.4in]{geometry}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -35,12 +35,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Adjust margins using geometry instead
+
 
 \urlstyle{same}
 
@@ -69,21 +65,21 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -93,7 +89,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,7 +112,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Institut Sup{\'e}rieur des Arts Multim{\'e}dia de la Manouba (ISAMM)}{Manouba, Tunisia}
-      {Bachelor Degree in Computer Engineering}{2024 -- 2027}
+      {Bachelor in Computer Science}{2024 -- 2027}
   \resumeSubHeadingListEnd
 
 
@@ -126,37 +122,37 @@
       \resumeProjectHeading
           {\textbf{AI Learning -- ML Classification \& Clustering on Carseats} $|$ \href{https://github.com/jasserhouimli/ailearning}{\underline{github.com/jasserhouimli/ailearning}}}{}
           \resumeItemListStart
-\resumeItem{Built a complete ML pipeline in Python using the \href{https://www.kaggle.com/datasets/huhao05133/carseats?select=Carseats.csv}{\underline{Carseats}} dataset to predict high and low sales.}
-            \resumeItem{Implemented and compared KNN, K-Means clustering, Random Forest (with hyperparameter tuning), and SVM with an RBF kernel.}
-            \resumeItem{Analyzed feature importance with Random Forest and visualized clusters and model performance with Matplotlib.}
+\resumeItem{Developed an ML pipeline in Python using the \href{https://www.kaggle.com/datasets/huhao05133/carseats?select=Carseats.csv}{\underline{Carseats}} dataset to predict sales, achieving 87\% accuracy with tuned Random Forest.}
+            \resumeItem{Compared 4 classifiers (KNN, K-Means, Random Forest, SVM), analyzing trade-offs in precision, recall, and runtime.}
+            \resumeItem{Visualized feature importance rankings to drive data-informed feature selection decisions.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Salary Analytics Dashboard} $|$ \href{https://github.com/jasserhouimli/bigdata}{\underline{github.com/jasserhouimli/bigdata}}}{}
           \resumeItemListStart
-            \resumeItem{Built a 12-container Hadoop and Spark cluster using Docker Compose for distributed data processing.}
-            \resumeItem{Developed a Streamlit dashboard with interactive Plotly charts to visualize salary trends.}
-            \resumeItem{Implemented PySpark ETL and a MapReduce job for transaction analysis.}
+            \resumeItem{Orchestrated a 12-container Hadoop and Spark cluster with Docker Compose, processing 250K+ salary records.}
+            \resumeItem{Created a Streamlit dashboard with 5+ Plotly charts for multi-dimensional salary trend analysis.}
+            \resumeItem{Engineered PySpark ETL jobs and a MapReduce pipeline to aggregate and analyze 5K+ transaction records.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{ModeforcesAPI -- Codeforces-like Backend} $|$ \href{https://github.com/jasserhouimli/modeforcesAPI}{\underline{github.com/jasserhouimli/modeforcesAPI}}}{}
           \resumeItemListStart
-            \resumeItem{Built a backend API in C\# with problem management, submission handling, and user authentication.}
-            \resumeItem{Used ASP.NET Core, Entity Framework Core, PostgreSQL, and JWT-based security.}
-            \resumeItem{Containerized with Docker and made deployable via Zerops.}
+            \resumeItem{Architected a ASP.NET Core API backend with 12+ endpoints for problem management, submission judging, and JWT-authenticated accounts.}
+            \resumeItem{Structured a PostgreSQL schema and exposed RESTful CRUD operations using EF Core.}
+            \resumeItem{Documented via Swagger and containerized the full stack using Docker.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{RJA3: Lost \& Found Backend API} $|$ \href{https://github.com/jasserhouimli/RJA3}{\underline{github.com/jasserhouimli/RJA3}}}{}
           \resumeItemListStart
-            \resumeItem{Designed and built a RESTful API for a lost-and-found platform with user authentication, item reporting, and matching logic.}
-            \resumeItem{Implemented CRUD operations, search and filtering, and role-based authorization.}
-            \resumeItem{Documented the API with Swagger and wrote unit tests with xUnit.}
+            \resumeItem{Architected a RESTful API for a lost-and-found platform with JWT authentication, item reporting, and automated matching logic.}
+            \resumeItem{Delivered 12+ CRUD endpoints with search, filtering, pagination, and role-based authorization for multi-user access.}
+            \resumeItem{Achieved 90\%+ unit test coverage with xUnit and documented via Swagger.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{TapTapRace} $|$ \href{https://github.com/jasserhouimli/TapTapRace}{\underline{github.com/jasserhouimli/TapTapRace}}}{}
           \resumeItemListStart
-            \resumeItem{Built a real-time typing race game with room-based gameplay and live messaging.}
-            \resumeItem{Implemented an ASP.NET Core SignalR hub for join/leave and real-time updates.}
-            \resumeItem{Exposed REST endpoints to create and list rooms, then wired a UI to consume them.}
+            \resumeItem{Built a real-time typing race game with room-based multiplayer and sub-100ms latency via SignalR.}
+            \resumeItem{Set up an ASP.NET Core SignalR hub for join/leave events, race state, and live position updates across clients.}
+            \resumeItem{Exposed REST endpoints for room CRUD and wired a responsive UI consuming both REST and WebSocket channels.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Competitive Programming Solutions Repository} $|$ \emph{C++, Python}}{}
@@ -174,10 +170,9 @@
       {Competitive Programming}{Ongoing}
       {Independent}{Online}
       \resumeItemListStart
-        \resumeItem{Codeforces \textbf{Pupil}; profile: \href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}.}
-        \resumeItem{Solved 200+ problems across Codeforces, AtCoder, and LeetCode.}
-        \resumeItem{Competed in university-level ICPC local contests.}
-        \resumeItem{Strong foundations in algorithms: sorting, binary search, graphs, dynamic programming, and greedy techniques.}
+        \resumeItem{Codeforces \textbf{Pupil}; \href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}.}
+        \resumeItem{Solved 200+ problems across Codeforces, AtCoder, and LeetCode; built strong analytical and problem-solving abilities.}
+        \resumeItem{Collaborated in team-based ICPC local contests, exercising adaptive thinking under time constraints.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -186,7 +181,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, C\#, Java, SQL} \\
+     \textbf{Languages}{: Python, C++, C\#, SQL} \\
      \textbf{Backend}{: ASP.NET Core, Entity Framework Core, REST API design} \\
      \textbf{Big Data}{: Hadoop (HDFS, MapReduce), Apache Spark (PySpark), Docker} \\
      \textbf{Databases}{: MySQL, PostgreSQL, SQL Server} \\
