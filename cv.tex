@@ -103,11 +103,16 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Jasser Houimli} \\ \vspace{1pt}
-    \small +216 23628074 $|$ \href{mailto:houimlijasser9@gmail.com}{\underline{houimlijasser9@gmail.com}} $|$
+    \small +216 23628074 $|$ Manouba, Tunisia $|$ \href{mailto:houimlijasser9@gmail.com}{\underline{houimlijasser9@gmail.com}} $|$
     \href{https://www.linkedin.com/in/jasserho1/}{\underline{linkedin.com/in/jasserho1}} $|$
     \href{https://jasserhouimli.github.io/me/}{\underline{jasserhouimli.github.io/me}} $|$
     \href{https://github.com/jasserhouimli}{\underline{github.com/jasserhouimli}}
 \end{center}
+
+
+%-----------SUMMARY-----------
+\section{Summary}
+  \small{Computer engineering student focused on big data and data engineering. Builds data pipelines with Spark and Hadoop, and backend services in Python and .NET. Open to 2026 data and backend internships.}
 
 
 %-----------EDUCATION-----------
@@ -115,7 +120,8 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Institut Sup{\'e}rieur des Arts Multim{\'e}dia de la Manouba (ISAMM)}{Manouba, Tunisia}
-      {Bachelor’s Degree in Computer Science}{2024 -- 2027}
+      {Bachelor's Degree in Computer Science}{2024 -- 2027}
+    \item\small{\textbf{Relevant Coursework}{: Big Data, Machine Learning, Databases, Data Structures \& Algorithms, Operating Systems, Computer Networks}}
   \resumeSubHeadingListEnd
 
 
@@ -123,45 +129,35 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{AI Learning -- ML Classification \& Clustering on Carseats} $|$ \href{https://github.com/jasserhouimli/ailearning}{\underline{github.com/jasserhouimli/ailearning}}}{}
+          {\textbf{Reflow -- Visual Data Pipeline Orchestration} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
           \resumeItemListStart
-\resumeItem{Developed an ML pipeline in Python using the \href{https://www.kaggle.com/datasets/huhao05133/carseats?select=Carseats.csv}{\underline{Carseats}} dataset to predict sales, achieving 87\% accuracy with tuned Random Forest.}
-            \resumeItem{Compared 4 classifiers (KNN, K-Means, Random Forest, SVM), analyzing trade-offs in precision, recall, and runtime.}
-            \resumeItem{Visualized feature importance rankings to drive data-informed feature selection decisions.}
+            \resumeItem{Built a visual ETL tool where users drag nodes onto a canvas to design a data pipeline and run it as SQL.}
+            \resumeItem{Engineered the run engine: tasks run in dependency order, failed tasks retry, runs can be cancelled, and tasks left running after a crash are recovered.}
+            \resumeItem{Added webhook and scheduled triggers, 106 automated tests, and a GitHub Actions CI pipeline.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Salary Analytics Dashboard} $|$ \href{https://github.com/jasserhouimli/bigdata}{\underline{github.com/jasserhouimli/bigdata}}}{}
+          {\textbf{Salary Analytics -- Hadoop \& Spark Pipeline} $|$ \href{https://github.com/jasserhouimli/bigdata}{\underline{github.com/jasserhouimli/bigdata}}}{}
           \resumeItemListStart
-            \resumeItem{Orchestrated a 12-container Hadoop and Spark cluster with Docker Compose, processing 250K+ salary records.}
-            \resumeItem{Created a Streamlit dashboard with 5+ Plotly charts for multi-dimensional salary trend analysis.}
-            \resumeItem{Engineered PySpark ETL jobs and a MapReduce pipeline to aggregate and analyze 5K+ transaction records.}
+            \resumeItem{Developed a PySpark ETL pipeline that extracted, cleaned, and aggregated 250,000+ salary records on a 12-container Hadoop and Spark cluster set up with Docker Compose.}
+            \resumeItem{Created a Streamlit dashboard to explore salary trends from the processed data.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI Learning -- ML Classification \& Clustering} $|$ \href{https://github.com/jasserhouimli/ailearning}{\underline{github.com/jasserhouimli/ailearning}}}{}
+          \resumeItemListStart
+            \resumeItem{Trained KNN, SVM, and Random Forest models to predict sales from the Carseats dataset, reaching 87\% accuracy with a tuned Random Forest.}
+            \resumeItem{Evaluated the models on accuracy, precision, recall, and speed, and used feature-importance plots to choose the best inputs.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SketchTogether -- Real-Time Collaborative Whiteboard} $|$ \href{https://github.com/jasserhouimli/sketch-together}{\underline{github.com/jasserhouimli/sketch-together}}}{}
+          \resumeItemListStart
+            \resumeItem{Built an online whiteboard where several users draw in the same room and see each other's strokes and notes in real time.}
+            \resumeItem{Saved boards with Entity Framework Core so they reload after a refresh, and added a live user count, save status, and shared undo/redo.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{ModeforcesAPI -- Codeforces-like Backend} $|$ \href{https://github.com/jasserhouimli/modeforcesAPI}{\underline{github.com/jasserhouimli/modeforcesAPI}}}{}
           \resumeItemListStart
-            \resumeItem{Architected a ASP.NET Core API backend with 12+ endpoints for problem management, submission judging, and JWT-authenticated accounts.}
-            \resumeItem{Structured a PostgreSQL schema and exposed RESTful CRUD operations using EF Core.}
-            \resumeItem{Documented via Swagger and containerized the full stack using Docker.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{RJA3: Lost \& Found Backend API} $|$ \href{https://github.com/jasserhouimli/RJA3}{\underline{github.com/jasserhouimli/RJA3}}}{}
-          \resumeItemListStart
-            \resumeItem{Architected a RESTful API for a lost-and-found platform with JWT authentication, item reporting, and automated matching logic.}
-            \resumeItem{Delivered 12+ CRUD endpoints with search, filtering, pagination, and role-based authorization for multi-user access.}
-            \resumeItem{Achieved 90\%+ unit test coverage with xUnit and documented via Swagger.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{TapTapRace} $|$ \href{https://github.com/jasserhouimli/TapTapRace}{\underline{github.com/jasserhouimli/TapTapRace}}}{}
-          \resumeItemListStart
-            \resumeItem{Built a real-time typing race game with room-based multiplayer and sub-100ms latency via SignalR.}
-            \resumeItem{Set up an ASP.NET Core SignalR hub for join/leave events, race state, and live position updates across clients.}
-            \resumeItem{Exposed REST endpoints for room CRUD and wired a responsive UI consuming both REST and WebSocket channels.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Competitive Programming Solutions Repository} $|$ \emph{C++, Python}}{}
-          \resumeItemListStart
-            \resumeItem{Maintained a GitHub repository with solutions to 150+ competitive programming problems.}
-            \resumeItem{Covered topics include dynamic programming, graphs, number theory, strings, and data structures.}
+            \resumeItem{Designed a REST API with 12+ endpoints for problems, submissions, and accounts, secured with JWT login.}
+            \resumeItem{Modeled the PostgreSQL schema with Entity Framework Core, documented the API with Swagger, and packaged it with Docker.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -173,9 +169,8 @@
       {Competitive Programming}{Ongoing}
       {Independent}{Online}
       \resumeItemListStart
-        \resumeItem{Solved 200+ problems across Codeforces, AtCoder, and LeetCode; built strong analytical and problem-solving abilities.}
-        \resumeItem{Codeforces \textbf{Pupil}; \href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}.}
-        \resumeItem{Collaborated in team-based ICPC local contests, exercising adaptive thinking under time constraints.}
+        \resumeItem{Solved 200+ algorithm and data-structure problems on Codeforces, AtCoder, and LeetCode.}
+        \resumeItem{Reached \textbf{Pupil} on Codeforces and competed in team-based ICPC contests. \href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -184,15 +179,13 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, C\#, SQL} \\
-     \textbf{Backend}{: ASP.NET Core, Entity Framework Core, REST API design} \\
-     \textbf{Big Data}{: Hadoop (HDFS, MapReduce), Apache Spark (PySpark), Docker} \\
-     \textbf{Databases}{: MySQL, PostgreSQL, SQL Server} \\
-     \textbf{Tools}{: Git, Linux command line, Jupyter Notebook, VS Code, Postman} \\
-     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Plotly}
+     \textbf{Data \& ML}{: Apache Spark (PySpark), Hadoop (HDFS, MapReduce), Pandas, NumPy, Scikit-learn, Matplotlib, Plotly, Streamlit} \\
+     \textbf{Data Stores}{: PostgreSQL, MySQL, SQL Server} \\
+     \textbf{Languages}{: Python, C\#, C++, TypeScript, SQL} \\
+     \textbf{Backend}{: ASP.NET Core, Minimal APIs, Entity Framework Core, SignalR, REST, JWT} \\
+     \textbf{Infra \& Tools}{: Docker, GitHub Actions (CI), Git, Linux, Jupyter, Postman, xUnit, pytest}
     }}
  \end{itemize}
-
 
 
 
