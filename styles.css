@@ -105,14 +105,12 @@ main {
 }
 
 .brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   width: 42px;
   height: 42px;
   border: 1px solid var(--fg);
   background: var(--bg-elevated);
-  font-weight: 600;
+  object-fit: cover;
 }
 
 .brand-text {
@@ -253,6 +251,16 @@ main {
   background: var(--bg-elevated);
   backdrop-filter: blur(6px);
   box-shadow: var(--shadow);
+}
+
+.hero-avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--fg);
+  background: var(--bg-elevated);
 }
 
 .card-line {
