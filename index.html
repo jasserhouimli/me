@@ -3,7 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jasser Houimli | Portfolio</title>
+    <title>Jasser Houimli | Data & Backend Portfolio</title>
+    <meta
+      name="description"
+      content="Jasser Houimli — big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jasser Houimli | Data & Backend Portfolio" />
+    <meta
+      property="og:description"
+      content="Big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+    />
+    <meta property="og:url" content="https://jasserhouimli.github.io/me/" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/108799236?v=4" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jasser Houimli | Data & Backend Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+    />
+    <meta name="theme-color" content="#0e1114" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e06934'/><text x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='white'>JH</text></svg>"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,37 +46,63 @@
         <a href="#capabilities">Capabilities</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a href="https://jasserhouimli.github.io/me/cv.pdf" target="_blank" rel="noreferrer">Résumé</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-icon" aria-hidden="true">/</span>
-        <span class="theme-text">Theme</span>
-      </button>
+      <div class="header-actions">
+        <nav class="social-links" aria-label="Social links">
+          <a href="https://github.com/jasserhouimli" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/jasserho1/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://codeforces.com/profile/JasserCC" target="_blank" rel="noreferrer">Codeforces</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">/</span>
+          <span class="theme-text">Theme</span>
+        </button>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow">Backend Engineering • Data Systems • Realtime</p>
+          <p class="eyebrow">Big Data • Data Engineering • Backend</p>
           <h1>
-            Clean systems,
+            Clean pipelines,
             <span class="accent">fast feedback</span>,
             real outcomes.
           </h1>
           <p class="lede">
-            I build backend services, data pipelines, and realtime systems
-            with a focus on clean architecture, performance, and clarity.
+            I build data pipelines, analytics, and backend services with a focus on
+            clean architecture, performance, and clarity.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#work">View projects</a>
             <a class="btn ghost" href="https://jasserhouimli.github.io/me/cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
             <a class="btn ghost" href="mailto:houimlijasser9@gmail.com">Email me</a>
           </div>
-          
+          <div class="hero-social">
+            <a href="https://github.com/jasserhouimli" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jasserho1/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://codeforces.com/profile/JasserCC" target="_blank" rel="noreferrer">Codeforces</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>16</strong>
+              <span>GitHub repositories</span>
+            </div>
+            <div class="stat">
+              <strong>150+</strong>
+              <span>Competitive-programming problems</span>
+            </div>
+            <div class="stat">
+              <strong>106</strong>
+              <span>Automated tests behind Reflow</span>
+            </div>
+          </div>
         </div>
         <div class="hero-card">
           <div class="card-line"></div>
           <p class="card-title">Currently</p>
-          <p class="card-body">Building backend and data systems in .NET and Python.</p>
+          <p class="card-body">Building data pipelines and backend systems in Python and .NET.</p>
           <div class="card-meta">
             <span>Manouba, Tunisia</span>
             <span>Open to internships</span>
@@ -64,12 +113,74 @@
       <section class="work" id="work">
         <div class="section-head">
           <h2>Selected Work</h2>
-          <p>Projects that show my backend, data, and realtime focus.</p>
+          <p>Data platforms and AI systems, backed by production-style backend engineering.</p>
         </div>
+
+        <h3 class="work-group-title">Data &amp; AI</h3>
+        <a class="work-card featured" href="https://github.com/jasserhouimli/Reflow" target="_blank" rel="noreferrer">
+          <img
+            class="work-card-shot"
+            src="https://github.com/jasserhouimli/Reflow/raw/master/docs/images/04-run.png"
+            alt="Reflow run view: pipeline DAG, run history, output preview table and execution logs"
+            loading="lazy"
+          />
+          <div class="work-card-body">
+            <div class="work-card-head">
+              <h3>Reflow</h3>
+              <span class="work-card-flag">Featured project</span>
+            </div>
+            <p>
+              Visual data-pipeline orchestration: a node DAG compiled to DuckDB SQL over a
+              PostgreSQL control plane, with immutable versions, bounded retries, recovery,
+              and idempotent webhook + cron triggers.
+            </p>
+            <div class="tags">
+              <span>.NET 10</span>
+              <span>DuckDB</span>
+              <span>PostgreSQL</span>
+              <span>SignalR</span>
+              <span>React Flow</span>
+              <span>Docker</span>
+            </div>
+          </div>
+        </a>
         <div class="work-grid">
+          <a class="work-card" href="https://github.com/jasserhouimli/bigdata" target="_blank" rel="noreferrer">
+            <h3>Salary Analytics</h3>
+            <p>12-container Hadoop + Spark cluster on Docker Compose, processing 250K+ salary records into a Streamlit dashboard.</p>
+            <div class="tags">
+              <span>PySpark</span>
+              <span>Hadoop</span>
+              <span>Streamlit</span>
+              <span>Docker</span>
+            </div>
+          </a>
+          <a class="work-card" href="https://github.com/jasserhouimli/ailearning" target="_blank" rel="noreferrer">
+            <h3>AI Learning</h3>
+            <p>Classification and clustering on the Carseats dataset — 4 models compared, 87% accuracy with a tuned Random Forest.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Matplotlib</span>
+            </div>
+          </a>
+        </div>
+
+        <h3 class="work-group-title">Backend &amp; Realtime</h3>
+        <div class="work-grid">
+          <a class="work-card" href="https://github.com/jasserhouimli/sketch-together" target="_blank" rel="noreferrer">
+            <h3>SketchTogether</h3>
+            <p>Real-time collaborative whiteboard: strokes and sticky notes sync live over WebSockets, with persisted, resumable boards.</p>
+            <div class="tags">
+              <span>.NET</span>
+              <span>TypeScript</span>
+              <span>WebSockets</span>
+              <span>CI</span>
+            </div>
+          </a>
           <a class="work-card" href="https://github.com/jasserhouimli/TapTapRace" target="_blank" rel="noreferrer">
             <h3>TapTapRace</h3>
-            <p>Realtime typing race game with SignalR rooms with UI</p>
+            <p>Realtime typing-race game with SignalR rooms and a live UI.</p>
             <div class="tags">
               <span>ASP.NET Core</span>
               <span>SignalR</span>
@@ -81,40 +192,18 @@
             <p>Codeforces-style backend with JWT auth and PostgreSQL.</p>
             <div class="tags">
               <span>ASP.NET Core</span>
-              <span>Docker</span>
               <span>PostgreSQL</span>
-              
-            </div>
-          </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/bigdata" target="_blank" rel="noreferrer">
-            <h3>Salary Analytics</h3>
-            <p>Hadoop + Spark pipeline with a Streamlit dashboard.</p>
-            <div class="tags">
-              <span>PySpark</span>
-              <span>Hadoop</span>
-              <span>Streamlit</span>
               <span>Docker</span>
-            </div>
-          </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/ailearning" target="_blank" rel="noreferrer">
-            <h3>AI Learning</h3>
-            <p>ML classification and clustering on the Carseats dataset.</p>
-            <div class="tags">
-              <span>Python</span>
-              <span>Scikit-learn</span>
-              <span>Matplotlib</span>
             </div>
           </a>
           <a class="work-card" href="https://github.com/jasserhouimli/RJA3" target="_blank" rel="noreferrer">
             <h3>RJA3</h3>
-            <p>Lost-and-found backend API with authentication and matching.</p>
+            <p>Lost-and-found API with JWT auth, search, and automated matching.</p>
             <div class="tags">
               <span>ASP.NET Core</span>
-              
-              <span>Swagger</span>
               <span>PostgreSQL</span>
-              <span>Docker</span>
               <span>xUnit</span>
+              <span>Swagger</span>
             </div>
           </a>
         </div>
@@ -164,20 +253,20 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I am a third-year computer engineering student focused on backend systems
-              and data pipelines. I enjoy turning complex problems into simple,
-              reliable software.
+              I am a third-year computer engineering student specializing in big data,
+              with a focus on data pipelines, analytics, and the backend systems that
+              move data reliably.
             </p>
             <p>
-              My stack centers on .NET, Python, and modern web tooling, with a
-              performance-first mindset and clean API design.
+              My stack centers on Python, .NET, and the data stack — Spark, Hadoop,
+              DuckDB, and PostgreSQL — with a performance-first mindset and clean API design.
             </p>
           </div>
           <div class="about-list">
             <h4>Focus</h4>
             <ul>
+              <li>Big-data pipelines and analytics</li>
               <li>Backend API design</li>
-              <li>Data processing and analytics</li>
               <li>Realtime communication</li>
             </ul>
           </div>
@@ -191,19 +280,29 @@
         </div>
         <div class="contact-card">
           <a href="mailto:houimlijasser9@gmail.com">houimlijasser9@gmail.com</a>
-          <p class="contact-note">Open to backend and data internships for 2026.</p>
+          <p class="contact-note">Open to data and backend internships for 2026.</p>
           <div class="contact-links">
             <a href="https://jasserhouimli.github.io/me/cv.pdf" target="_blank" rel="noreferrer">Resume</a>
-            <a href="https://www.linkedin.com/in/jasserho1/">LinkedIn</a>
-            <a href="https://github.com/jasserhouimli">GitHub</a>
+            <a href="https://github.com/jasserhouimli" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/jasserho1/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://codeforces.com/profile/JasserCC" target="_blank" rel="noreferrer">Codeforces</a>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Jasser Houimli</span>
-      <span>2026</span>
+      <div class="footer-top">
+        <span>Jasser Houimli</span>
+        <span>2026</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="mailto:houimlijasser9@gmail.com">Email</a>
+        <a href="https://github.com/jasserhouimli" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jasserho1/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://codeforces.com/profile/JasserCC" target="_blank" rel="noreferrer">Codeforces</a>
+        <a href="https://jasserhouimli.github.io/me/cv.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
     </footer>
 
     <script src="script.js"></script>
