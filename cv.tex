@@ -131,9 +131,9 @@
       \resumeProjectHeading
           {\textbf{Reflow -- Visual Data Pipeline Orchestration} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
           \resumeItemListStart
-            \resumeItem{Built a visual ETL tool where users drag nodes onto a canvas to design a data pipeline and run it as SQL.}
-            \resumeItem{Engineered the run engine: tasks run in dependency order, failed tasks retry, runs can be cancelled, and tasks left running after a crash are recovered.}
-            \resumeItem{Added webhook and scheduled triggers, 106 automated tests, and a GitHub Actions CI pipeline.}
+            \resumeItem{Built a visual ETL tool with React 19, TypeScript, and React Flow where users drag from 10 node types to design a data pipeline and run it as SQL.}
+            \resumeItem{Engineered the DAG run engine in .NET 10: dependency-ordered tasks, bounded retries, cancellation, and recovery of tasks left running after a crash.}
+            \resumeItem{Added idempotent webhook and cron triggers, plus 106 tests (81 unit, 25 integration) and a GitHub Actions CI pipeline.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Salary Analytics -- Hadoop \& Spark Pipeline} $|$ \href{https://github.com/jasserhouimli/bigdata}{\underline{github.com/jasserhouimli/bigdata}}}{}
@@ -150,14 +150,14 @@
       \resumeProjectHeading
           {\textbf{SketchTogether -- Real-Time Collaborative Whiteboard} $|$ \href{https://github.com/jasserhouimli/sketch-together}{\underline{github.com/jasserhouimli/sketch-together}}}{}
           \resumeItemListStart
-            \resumeItem{Built an online whiteboard where several users draw in the same room and see each other's strokes and notes in real time.}
-            \resumeItem{Saved boards with Entity Framework Core so they reload after a refresh, and added a live user count, save status, and shared undo/redo.}
+            \resumeItem{Built a real-time collaborative whiteboard with .NET 10 Minimal APIs and SignalR where users create a board, share a link, and others join to draw and add sticky notes together live.}
+            \resumeItem{Persisted boards with EF Core (SQLite) so they reload after refresh, and added a live presence count, save status, and shared undo/redo.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{ModeforcesAPI -- Codeforces-like Backend} $|$ \href{https://github.com/jasserhouimli/modeforcesAPI}{\underline{github.com/jasserhouimli/modeforcesAPI}}}{}
           \resumeItemListStart
-            \resumeItem{Designed a REST API with 12+ endpoints for problems, submissions, and accounts, secured with JWT login.}
-            \resumeItem{Modeled the PostgreSQL schema with Entity Framework Core, documented the API with Swagger, and packaged it with Docker.}
+            \resumeItem{Designed a REST API with 11 endpoints for problems, submissions, and accounts, secured with JWT login.}
+            \resumeItem{Modeled the PostgreSQL schema with EF Core, documented it with Swagger, and included a judge that runs C, C++, Java, and Python submissions.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -183,6 +183,7 @@
      \textbf{Data Stores}{: PostgreSQL, MySQL, SQL Server} \\
      \textbf{Languages}{: Python, C\#, C++, TypeScript, SQL} \\
      \textbf{Backend}{: ASP.NET Core, Minimal APIs, Entity Framework Core, SignalR, REST, JWT} \\
+     \textbf{Frontend}{: React 19, React Flow, Vite, Tailwind} \\
      \textbf{Infra \& Tools}{: Docker, GitHub Actions (CI), Git, Linux, Jupyter, Postman, xUnit, pytest}
     }}
  \end{itemize}
