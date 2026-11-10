@@ -6,13 +6,13 @@
     <title>Jasser Houimli | Data & Backend Portfolio</title>
     <meta
       name="description"
-      content="Jasser Houimli — big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+      content="Jasser Houimli — big-data and backend engineer. Distributed data pipelines (Spark, Hadoop), modular architecture (Vertical Slices), and reliable backend systems."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Jasser Houimli | Data & Backend Portfolio" />
     <meta
       property="og:description"
-      content="Big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+      content="Big-data and backend engineer. Distributed data pipelines (Spark, Hadoop), modular architecture (Vertical Slices), and reliable backend systems."
     />
     <meta property="og:url" content="https://jasserhouimli.github.io/me/" />
     <meta property="og:image" content="https://jasserhouimli.github.io/me/avatar.jpg" />
@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Jasser Houimli | Data & Backend Portfolio" />
     <meta
       name="twitter:description"
-      content="Big-data and backend engineer. Data pipelines (Spark, Hadoop, DuckDB), analytics, and the backend systems that move data reliably."
+      content="Big-data and backend engineer. Distributed data pipelines (Spark, Hadoop), modular architecture (Vertical Slices), and reliable backend systems."
     />
     <meta name="theme-color" content="#0e1114" />
     <link
@@ -77,8 +77,8 @@
             real outcomes.
           </h1>
           <p class="lede">
-            I build data pipelines, analytics, and backend services with a focus on
-            clean architecture, performance, and clarity.
+            I build distributed data pipelines and backend services with a focus on
+            modular design, reliable execution, and performance.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#work">View projects</a>
@@ -92,7 +92,7 @@
           </div>
           <div class="hero-stats">
             <div class="stat">
-              <strong>150+</strong>
+              <strong>200+</strong>
               <span>Competitive-programming problems</span>
             </div>
           </div>
@@ -118,10 +118,9 @@
       <section class="work" id="work">
         <div class="section-head">
           <h2>Selected Work</h2>
-          <p>Data platforms and AI systems, backed by production-style backend engineering.</p>
+          <p>Data platforms and distributed systems, backed by production-style backend engineering.</p>
         </div>
 
-        <h3 class="work-group-title">Data &amp; AI</h3>
         <a class="work-card featured" href="https://github.com/jasserhouimli/Reflow" target="_blank" rel="noreferrer">
           <img
             class="work-card-shot"
@@ -135,82 +134,47 @@
               <span class="work-card-flag">Featured project</span>
             </div>
             <p>
-              Visual data-pipeline orchestration: a node DAG compiled to DuckDB SQL over a
-              PostgreSQL control plane, with immutable versions, bounded retries, recovery,
-              and idempotent webhook + cron triggers.
+              Visual data-pipeline orchestration: a Modular Monolith backend in ASP.NET Core paired
+              with a React Flow UI for pipeline workflows, asynchronous execution, task state tracking,
+              retries, and webhook + cron triggers.
             </p>
             <div class="tags">
               <span>.NET 10</span>
+              <span>ASP.NET Core</span>
+              <span>Modular Monolith</span>
+              <span>Vertical Slices</span>
               <span>React 19</span>
               <span>TypeScript</span>
               <span>React Flow</span>
-              <span>DuckDB</span>
               <span>PostgreSQL</span>
-              <span>SignalR</span>
+              <span>xUnit</span>
               <span>Docker</span>
             </div>
           </div>
         </a>
+
         <div class="work-grid">
           <a class="work-card" href="https://github.com/jasserhouimli/SalarySwarm" target="_blank" rel="noreferrer">
-            <h3>Salary Analytics</h3>
-            <p>12-container Hadoop + Spark cluster on Docker Compose, processing 250K+ salary records into a Streamlit dashboard.</p>
+            <h3>SalarySwarm</h3>
+            <p>Multi-node Hadoop (HDFS) and Apache Spark cluster on Docker Compose, batch PySpark ETL processing 250K+ salary records into an interactive Streamlit dashboard.</p>
             <div class="tags">
               <span>PySpark</span>
-              <span>Hadoop</span>
+              <span>Hadoop (HDFS)</span>
+              <span>Docker Compose</span>
               <span>Streamlit</span>
-              <span>Docker</span>
+              <span>Plotly</span>
             </div>
           </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/ailearning" target="_blank" rel="noreferrer">
-            <h3>AI Learning</h3>
-            <p>Classification and clustering on the Carseats dataset — 4 models compared, 88% accuracy with a linear-kernel SVM.</p>
-            <div class="tags">
-              <span>Python</span>
-              <span>Scikit-learn</span>
-              <span>Matplotlib</span>
-            </div>
-          </a>
-        </div>
-
-        <h3 class="work-group-title">Backend &amp; Realtime</h3>
-        <div class="work-grid">
           <a class="work-card" href="https://github.com/jasserhouimli/sketch-together" target="_blank" rel="noreferrer">
             <h3>SketchTogether</h3>
-            <p>Real-time collaborative whiteboard: strokes and sticky notes sync live over WebSockets, with persisted, resumable boards.</p>
-            <div class="tags">
-              <span>.NET</span>
-              <span>TypeScript</span>
-              <span>WebSockets</span>
-              <span>CI</span>
-            </div>
-          </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/TapTapRace" target="_blank" rel="noreferrer">
-            <h3>TapTapRace</h3>
-            <p>Realtime typing-race game with SignalR rooms and a live UI.</p>
+            <p>Real-time collaborative whiteboard built with ASP.NET Core Minimal APIs and SignalR (WebSockets), featuring live multi-user drawing, sticky notes, presence, and SQLite persistence.</p>
             <div class="tags">
               <span>ASP.NET Core</span>
               <span>SignalR</span>
-              <span>Docker</span>
-            </div>
-          </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/modeforcesAPI" target="_blank" rel="noreferrer">
-            <h3>ModeforcesAPI</h3>
-            <p>Codeforces-style backend with JWT auth and PostgreSQL.</p>
-            <div class="tags">
-              <span>ASP.NET Core</span>
-              <span>PostgreSQL</span>
-              <span>Docker</span>
-            </div>
-          </a>
-          <a class="work-card" href="https://github.com/jasserhouimli/RJA3" target="_blank" rel="noreferrer">
-            <h3>RJA3</h3>
-            <p>Lost-and-found API with JWT auth, search, and automated matching.</p>
-            <div class="tags">
-              <span>ASP.NET Core</span>
-              <span>PostgreSQL</span>
-              <span>xUnit</span>
-              <span>Swagger</span>
+              <span>WebSockets</span>
+              <span>TypeScript</span>
+              <span>EF Core</span>
+              <span>SQLite</span>
             </div>
           </a>
         </div>
@@ -260,21 +224,20 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I am a third-year computer engineering student specializing in big data,
-              with a focus on data pipelines, analytics, and the backend systems that
-              move data reliably.
+              I am a computer science student specializing in big data and backend engineering,
+              with a focus on distributed data pipelines, scalable systems, and modular design.
             </p>
             <p>
-              My stack centers on Python, .NET, and the data stack — Spark, Hadoop,
-              DuckDB, and PostgreSQL — with a performance-first mindset and clean API design.
+              My stack centers on Python, .NET (C#), and data stores — Spark, Hadoop,
+              PostgreSQL, and SQLite — with a focus on Modular Monoliths, Vertical Slices, and reliable API design.
             </p>
           </div>
           <div class="about-list">
             <h4>Focus</h4>
             <ul>
-              <li>Big-data pipelines and analytics</li>
-              <li>Backend API design</li>
-              <li>Realtime communication</li>
+              <li>Big-data pipelines & distributed processing</li>
+              <li>Backend architecture (Modular Monolith, Vertical Slices)</li>
+              <li>Realtime communication & WebSockets</li>
             </ul>
           </div>
         </div>

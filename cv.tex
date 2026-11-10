@@ -34,6 +34,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -102,17 +103,12 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Jasser Houimli} \\ \vspace{1pt}
-    \small +216 23 628 074 $|$ Manouba, Tunisia $|$ \href{mailto:houimlijasser9@gmail.com}{\underline{houimlijasser9@gmail.com}} $|$
+    \textbf{\Huge Jasser Houimli} \\ \vspace{1pt}
+    \small +216 23 628 074 $|$ \href{mailto:houimlijasser9@gmail.com}{\underline{houimlijasser9@gmail.com}} $|$
     \href{https://www.linkedin.com/in/jasserho1/}{\underline{linkedin.com/in/jasserho1}} $|$
     \href{https://jasserhouimli.github.io/me/}{\underline{jasserhouimli.github.io/me}} $|$
     \href{https://github.com/jasserhouimli}{\underline{github.com/jasserhouimli}}
 \end{center}
-
-
-%-----------SUMMARY-----------
-\section{Summary}
-  \small{Data engineering and backend-focused computer science student. Builds reliable Spark/Hadoop pipelines and .NET services with strong testing and CI habits. Seeking a 2026 internship in data or backend engineering.}
 
 
 %-----------EDUCATION-----------
@@ -121,7 +117,7 @@
     \resumeSubheading
       {Institut Sup{\'e}rieur des Arts Multim{\'e}dia de la Manouba (ISAMM)}{Manouba, Tunisia}
       {Bachelor's Degree in Computer Science}{2024 -- 2027}
-    \item\small{\textbf{Relevant Coursework}{: Big Data, Machine Learning, Databases, Data Structures \& Algorithms, Operating Systems, Computer Networks}}
+    \item\small{\textbf{Relevant Coursework:} Big Data, Machine Learning, Databases, Data Structures \& Algorithms, Operating Systems, Computer Networks}
   \resumeSubHeadingListEnd
 
 
@@ -129,48 +125,38 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Reflow -- Visual Data Pipeline Orchestration} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
+          {\textbf{Reflow -- Visual Data Pipeline Orchestrator} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
           \resumeItemListStart
-            \resumeItem{Built a visual ETL platform with a .NET 10 API and React 19/TypeScript/React Flow editor supporting 10 node types.}
-            \resumeItem{Engineered a DAG execution engine with dependency-aware scheduling, bounded retries, cancellation, and crash recovery for in-flight tasks.}
-            \resumeItem{Added idempotent webhook and cron triggers to prevent duplicate runs, backed by 100+ tests and a GitHub Actions CI pipeline.}
+            \resumeItem{Architected the backend as a Modular Monolith with Vertical Slices in ASP.NET Core, paired with a React Flow UI for pipeline workflows.}
+            \resumeItem{Engineered an asynchronous execution engine that coordinates step dependencies, manages task state transitions, and handles retries.}
+            \resumeItem{Built automated triggers (cron schedules and webhooks) with persistent run history in PostgreSQL, backed by xUnit tests and GitHub Actions CI.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Salary Analytics -- Hadoop \& Spark Pipeline} $|$ \href{https://github.com/jasserhouimli/SalarySwarm}{\underline{github.com/jasserhouimli/SalarySwarm}}}{}
+          {\textbf{SalarySwarm -- Distributed Hadoop \& Spark Pipeline} $|$ \href{https://github.com/jasserhouimli/SalarySwarm}{\underline{github.com/jasserhouimli/SalarySwarm}}}{}
           \resumeItemListStart
-            \resumeItem{Built a PySpark ETL pipeline that processed 250,000+ salary records on a 12-container Hadoop and Spark cluster using Docker Compose.}
-            \resumeItem{Built an interactive Streamlit dashboard for salary-trend analysis.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{AI Learning -- ML Classification \& Clustering} $|$ \href{https://github.com/jasserhouimli/ailearning}{\underline{github.com/jasserhouimli/ailearning}}}{}
-          \resumeItemListStart
-            \resumeItem{Benchmarked KNN, SVM, and Random Forest for high-sales prediction on the Carseats dataset, reaching 88\% accuracy with a linear-kernel SVM.}
-            \resumeItem{Used confusion matrices and feature importance to identify price as the strongest predictor.}
+            \resumeItem{Containerized a multi-node Hadoop (HDFS) and Apache Spark cluster using Docker Compose to simulate a distributed processing environment.}
+            \resumeItem{Developed PySpark batch ETL scripts to clean, transform, and aggregate 250,000+ salary records into structured datasets.}
+            \resumeItem{Built an interactive Streamlit dashboard with Plotly charts to visualize compensation trends across job roles, experience levels, and locations.}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{SketchTogether -- Real-Time Collaborative Whiteboard} $|$ \href{https://github.com/jasserhouimli/sketch-together}{\underline{github.com/jasserhouimli/sketch-together}}}{}
           \resumeItemListStart
-            \resumeItem{Built a collaborative whiteboard with .NET 10 Minimal APIs and SignalR, with shared drawing and sticky notes via link sharing.}
-            \resumeItem{Persisted boards with EF Core and SQLite and added live presence, save status, and shared undo/redo.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{ModeforcesAPI -- Codeforces-like Backend} $|$ \href{https://github.com/jasserhouimli/modeforcesAPI}{\underline{github.com/jasserhouimli/modeforcesAPI}}}{}
-          \resumeItemListStart
-            \resumeItem{Designed a JWT-secured REST API with 11 endpoints for problems, submissions, and accounts.}
-            \resumeItem{Modeled PostgreSQL with EF Core, documented APIs with Swagger, and built a C/C++/Java/Python judge.}
+            \resumeItem{Built a real-time collaborative whiteboard application using ASP.NET Core Minimal APIs, SignalR (WebSockets), and TypeScript.}
+            \resumeItem{Enabled low-latency canvas synchronization for multi-user freehand drawing, sticky notes, active user presence, and shared undo/redo.}
+            \resumeItem{Persisted board state and canvas elements in SQLite via Entity Framework Core, allowing boards to be shared and resumed via unique links.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 
-%-----------EXPERIENCE-----------
-\section{Experience \& Activities}
+%-----------COMPETITIVE PROGRAMMING-----------
+\section{Competitive Programming \& Problem Solving}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Competitive Programming}{Ongoing}
-      {Independent}{\href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}}
+      {Algorithmic Problem Solving}{Ongoing}
+      {Codeforces, LeetCode, AtCoder}{\href{https://codeforces.com/profile/JasserCC}{\underline{codeforces.com/profile/JasserCC}}}
       \resumeItemListStart
-        \resumeItem{Solved 200+ algorithm and data-structure problems on Codeforces, AtCoder, and LeetCode.}
-        \resumeItem{Achieved \textbf{Pupil} rating on Codeforces and competed in team-based ICPC contests.}
+        \resumeItem{Solved 200+ algorithmic problems across Codeforces, LeetCode, and AtCoder.}
+        \resumeItem{Achieved \textbf{Pupil} rank on Codeforces (Handle: JasserCC) and competed in team-based ICPC contests.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -179,16 +165,13 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Data \& ML}{: Apache Spark (PySpark), Hadoop (HDFS, MapReduce), Pandas, NumPy, Scikit-learn, Matplotlib, Plotly, Streamlit} \\
-     \textbf{Data Stores}{: PostgreSQL, MySQL, SQL Server, SQLite} \\
-     \textbf{Languages}{: Python, C\#, C++, TypeScript, SQL} \\
-     \textbf{Backend}{: ASP.NET Core, Minimal APIs, Entity Framework Core, SignalR, REST, JWT} \\
-     \textbf{Frontend}{: React 19, React Flow, Vite, Tailwind CSS} \\
-     \textbf{Infra \& Tools}{: Docker, Docker Compose, GitHub Actions (CI), Git, Linux, Jupyter, Postman, xUnit, pytest}
+     \textbf{Languages}{: Python, C\#, C++, SQL, TypeScript, JavaScript} \\
+     \textbf{Data \& Analytics}{: Apache Spark (PySpark), Hadoop (HDFS), Pandas, NumPy, Streamlit} \\
+     \textbf{Backend \& Architecture}{: ASP.NET Core, Minimal APIs, Modular Monolith, Vertical Slices, EF Core, SignalR, REST} \\
+     \textbf{Databases}{: PostgreSQL, SQLite, MySQL, SQL Server} \\
+     \textbf{DevOps \& Tools}{: Docker, Docker Compose, Git, GitHub Actions (CI), Linux, Postman, xUnit}
     }}
  \end{itemize}
-
-
 
 
 %-------------------------------------------
