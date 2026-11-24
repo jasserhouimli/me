@@ -125,10 +125,11 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Reflow -- Visual Data Pipeline Orchestrator} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
+          {\textbf{Reflow -- Visual Data Pipeline Orchestrator} $|$ \href{https://reflow.jasserlabs.dev/}{\underline{reflow.jasserlabs.dev}} $|$ \href{https://github.com/jasserhouimli/Reflow}{\underline{github.com/jasserhouimli/Reflow}}}{}
           \resumeItemListStart
-            \resumeItem{Architected the backend as a Modular Monolith with Vertical Slices in ASP.NET Core, paired with a React Flow UI for pipeline workflows.}
-            \resumeItem{Engineered an asynchronous execution engine that coordinates step dependencies, manages task state transitions, and handles retries.}
+            \resumeItem{Architected the backend as a Modular Monolith with Vertical Slices in ASP.NET Core, paired with a React Flow editor for building pipeline DAGs.}
+            \resumeItem{Engineered an asynchronous execution engine that resolves step dependencies, manages task state transitions, and handles retries and cancellation.}
+            \resumeItem{Implemented an extensible node registry where each step type owns its configuration, validation, and execution, so new nodes register without changing the engine.}
             \resumeItem{Built automated triggers (cron schedules and webhooks) with persistent run history in PostgreSQL, backed by xUnit tests and GitHub Actions CI.}
           \resumeItemListEnd
       \resumeProjectHeading
@@ -137,13 +138,6 @@
             \resumeItem{Containerized a multi-node Hadoop (HDFS) and Apache Spark cluster using Docker Compose to simulate a distributed processing environment.}
             \resumeItem{Developed PySpark batch ETL scripts to clean, transform, and aggregate 250,000+ salary records into structured datasets.}
             \resumeItem{Built an interactive Streamlit dashboard with Plotly charts to visualize compensation trends across job roles, experience levels, and locations.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{SketchTogether -- Real-Time Collaborative Whiteboard} $|$ \href{https://github.com/jasserhouimli/sketch-together}{\underline{github.com/jasserhouimli/sketch-together}}}{}
-          \resumeItemListStart
-            \resumeItem{Built a real-time collaborative whiteboard application using ASP.NET Core Minimal APIs, SignalR (WebSockets), and TypeScript.}
-            \resumeItem{Enabled low-latency canvas synchronization for multi-user freehand drawing, sticky notes, active user presence, and shared undo/redo.}
-            \resumeItem{Persisted board state and canvas elements in SQLite via Entity Framework Core, allowing boards to be shared and resumed via unique links.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 

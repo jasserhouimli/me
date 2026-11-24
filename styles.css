@@ -642,14 +642,55 @@ main {
   margin-bottom: 20px;
 }
 
+.work-card-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
 .work-card-shot {
   width: 100%;
   aspect-ratio: 16 / 9;
   max-height: 480px;
   object-fit: cover;
   object-position: top center;
-  border: 1px solid var(--line);
+  border: none;
   background: var(--bg);
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.work-card-media:hover .work-card-shot {
+  transform: scale(1.015);
+}
+
+.media-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(14, 17, 20, 0.85);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.work-card-media:hover .media-badge {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 .work-card-body {
@@ -670,6 +711,14 @@ main {
   margin-bottom: 2px;
 }
 
+.work-card.featured h3 a {
+  transition: color 0.2s ease;
+}
+
+.work-card.featured h3 a:hover {
+  color: var(--accent);
+}
+
 .work-card-flag {
   border: 1px solid var(--accent);
   color: var(--accent);
@@ -678,6 +727,73 @@ main {
   text-transform: uppercase;
   letter-spacing: 1.8px;
   white-space: nowrap;
+}
+
+.live-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--fg);
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.live-status-pill:hover {
+  border-color: var(--accent);
+  background: rgba(224, 105, 52, 0.1);
+  transform: translateY(-1px);
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: live-pulse 2s infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes live-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.work-card-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.btn-sm {
+  padding: 9px 18px;
+  font-size: 0.78rem;
+  letter-spacing: 1.2px;
+  gap: 6px;
+}
+
+.btn-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover .btn-arrow {
+  transform: translate(2px, -2px);
 }
 
 .site-footer {
